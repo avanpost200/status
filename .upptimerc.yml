@@ -28,9 +28,9 @@ status-website:
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.avanpost20.ru
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/avanpost200/status/master/assets/logo.png
-  favicon: https://raw.githubusercontent.com/avanpost200/status/master/assets/logo.png
-  faviconSvg: https://raw.githubusercontent.com/avanpost200/status/master/assets/logo.svg
+  logoUrl: https://status.avanpost20.ru/logo.png
+  favicon: https://status.avanpost20.ru/logo.png
+  faviconSvg: https://status.avanpost20.ru/logo.svg
   name: "Next Status"
   introTitle: "Next Service Status"
   introMessage: "Next is a user-first chat platform built with modern web technologies."
