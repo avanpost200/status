@@ -1,36 +1,43 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: avanpost200 # Your GitHub organization or username, where this repository lives
+repo: status # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
+  - name: API
+    url: https://api.avanpost20.ru
+  - name: CDN
+    url: https://autumn.avanpost20.ru?t=2
+  - name: Voice
+    url: https://vortex.avanpost20.ru
+  - name: Proxy Service
+    url: https://january.avanpost20.ru
+  - name: Client
+    url: https://app.avanpost20.ru
+  - name: Static Resources
+    url: https://static.avanpost20.ru
+    expectedStatusCodes:
+      - 200
+      - 404
+  - name: Mail
     check: "tcp-ping"
-    ipv6: true
+    url: $MAIL_SERVER
+    port: 25
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
+  cname: status.avanpost20.ru
   # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  logoUrl: https://app.avanpost20.ru/assets/logo_round.png
+  favicon: https://app.avanpost20.ru/assets/logo_round.png
+  name: "Next Status"
+  introTitle: "Next Service Status"
+  introMessage: "Next is a user-first chat platform built with modern web technologies."
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Website
+      href: https://next.avanpost20.ru
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
